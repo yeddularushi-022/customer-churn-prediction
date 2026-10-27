@@ -32,11 +32,9 @@ Customer churn is an important business problem because losing customers can aff
 
 The application provides an interactive interface for entering customer information and obtaining a churn prediction.
 
-To display a screenshot here, upload an image of your working application to this repository and save it as `app_screenshot.png`. Then uncomment the Markdown image line below.
+![Customer Churn Prediction Application](app_screenshot.png)
 
-<!-- ![Customer Churn Prediction Application](app_screenshot.png)
-) -->
-
+**Example Prediction:** The application estimates the customer's churn probability and displays a prediction based on the entered information.
 ## Model Performance
 
 The models were evaluated on a held-out test set containing 20% of the dataset.
