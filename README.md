@@ -2,6 +2,10 @@
 
 A machine learning project that predicts whether a telecommunications customer is likely to leave a service. It compares Logistic Regression and Random Forest models and provides an interactive prediction interface using Streamlit.
 
+🚀 **Live Demo:** [Try the Customer Churn Prediction App](https://customer-churn-prediction-ipdvhxvum2ulghr2aksj44.streamlit.app/)
+
+💻 **Source Code:** [View on GitHub](https://github.com/yeddularushi-022/customer-churn-prediction)
+
 ## Project Overview
 
 Customer churn is an important business problem because losing customers can affect revenue and growth. This project uses customer account and service information to predict churn and help identify customers who may need retention support.
@@ -24,6 +28,14 @@ Customer churn is an important business problem because losing customers can aff
 - Streamlit
 - Joblib
 
+## Application Preview
+
+The application provides an interactive interface for entering customer information and obtaining a churn prediction.
+
+To display a screenshot here, upload an image of your working application to this repository and save it as `app_screenshot.png`. Then uncomment the Markdown image line below.
+
+<!-- ![Customer Churn Prediction App](app_screenshot.png) -->
+
 ## Model Performance
 
 The models were evaluated on a held-out test set containing 20% of the dataset.
@@ -36,7 +48,9 @@ The models were evaluated on a held-out test set containing 20% of the dataset.
 | F1 Score | 60.92% | 60.15% |
 | ROC-AUC | 0.8418 | 0.8275 |
 
-Logistic Regression achieved higher accuracy, precision, F1 Score, and ROC-AUC in this evaluation. Random Forest achieved higher recall for churn customers. The preferred model depends on the business objective and the cost of missing a customer who may churn.
+Logistic Regression achieved higher accuracy, precision, F1 Score, and ROC-AUC in this evaluation. Random Forest achieved higher recall for churn customers.
+
+The preferred model depends on the business objective and the cost of missing a customer who may churn. For example, a business focused on identifying as many potential churners as possible may prioritize recall.
 
 ## Project Structure
 
@@ -55,43 +69,49 @@ The dataset is excluded from this repository. Obtain the dataset from its origin
 
 ## Installation and Setup
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yeddularushi-022/customer-churn-prediction.git
 cd customer-churn-prediction
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
 ```bash
 py -m pip install -r requirements.txt
 ```
 
-### 3. Prepare the dataset
+### 3. Prepare the Dataset
 
-Place `WA_Fn-UseC_-Telco-Customer-Churn.csv` in the project folder. Make sure you have permission to obtain and use the dataset from its source.
+Place `WA_Fn-UseC_-Telco-Customer-Churn.csv` in the project folder.
 
-### 4. Train the model
+Ensure that you obtain and use the dataset in accordance with its source's terms.
+
+### 4. Train the Model
 
 ```bash
 py main.py
 ```
 
-### 5. Run the Streamlit application
+### 5. Run the Streamlit Application
 
 ```bash
 py -m streamlit run app.py
 ```
 
-The application will open in your browser, usually at `http://localhost:8501`.
+The application will usually open in your browser at:
+
+`http://localhost:8501`
+
+**Note:** The deployed application uses the saved trained model. You do not need the original dataset just to use the live demo.
 
 ## Future Improvements
 
-- Deploy the application online
-- Improve churn recall and model calibration
-- Add explainability for individual predictions
-- Test the model on additional datasets
+- Improve churn recall and model calibration.
+- Add explainability for individual predictions.
+- Test the model on additional datasets.
+- Explore hyperparameter tuning to improve model performance.
 
 ## Disclaimer
 
@@ -101,4 +121,9 @@ This project is for educational and demonstration purposes. Predictions are esti
 
 **Rushi Yeddula**
 
-GitHub: [@yeddularushi-022](https://github.com/yeddularushi-022)
+- GitHub: [@yeddularushi-022](https://github.com/yeddularushi-022)
+- LinkedIn: [Yeddula Rushi](https://www.linkedin.com/in/yeddula-rushi-77a947434/)
+
+---
+
+*Built as a practical machine learning project to explore customer churn prediction and model evaluation.*
