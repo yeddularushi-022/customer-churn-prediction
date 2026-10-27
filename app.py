@@ -6,7 +6,6 @@ import joblib
 
 model = joblib.load("churn_model.pkl")
 
-
 feature_columns = model.feature_names_in_
 st.set_page_config(
     page_title="Customer Churn Prediction",
