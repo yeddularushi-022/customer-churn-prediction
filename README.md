@@ -34,7 +34,8 @@ The application provides an interactive interface for entering customer informat
 
 To display a screenshot here, upload an image of your working application to this repository and save it as `app_screenshot.png`. Then uncomment the Markdown image line below.
 
-<!-- ![Customer Churn Prediction App](app_screenshot.png) -->
+<!-- ![Customer Churn Prediction App](<img width="1915" height="966" alt="Screenshot 2026-10-27 221508" src="https://github.com/user-attachments/assets/2b71d5e3-ebef-49a3-8181-84bcc79cb920" />
+) -->
 
 ## Model Performance
 
@@ -104,7 +105,6 @@ The application will usually open in your browser at:
 
 `http://localhost:8501`
 
-**Note:** The deployed application uses the saved trained model. You do not need the original dataset just to use the live demo.
 
 ## Future Improvements
 
