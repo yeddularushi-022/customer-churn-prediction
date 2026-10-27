@@ -3,9 +3,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the trained model and training feature columns
 model = joblib.load("churn_model.pkl")
-training_data = pd.read_csv("WA_Fn-UseC_-Telco-Customer-Churn.csv")
+
+feature_columns = model.feature_names_in_
 
 training_data["TotalCharges"] = pd.to_numeric(
     training_data["TotalCharges"].str.strip(),
