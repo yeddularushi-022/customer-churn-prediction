@@ -34,7 +34,7 @@ The application provides an interactive interface for entering customer informat
 
 To display a screenshot here, upload an image of your working application to this repository and save it as `app_screenshot.png`. Then uncomment the Markdown image line below.
 
-<!-- ![Customer Churn Prediction App](<img width="1915" height="966" alt="Screenshot 2026-10-27 221508" src="https://github.com/user-attachments/assets/2b71d5e3-ebef-49a3-8181-84bcc79cb920" />
+<!-- ![Customer Churn Prediction Application](app_screenshot.png)
 ) -->
 
 ## Model Performance
