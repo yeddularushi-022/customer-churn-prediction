@@ -3,18 +3,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+
 model = joblib.load("churn_model.pkl")
 
+
 feature_columns = model.feature_names_in_
-
-training_data["TotalCharges"] = pd.to_numeric(
-    training_data["TotalCharges"].str.strip(),
-    errors="coerce"
-).fillna(0)
-
-X_reference = training_data.drop(columns=["customerID", "Churn"])
-X_reference = pd.get_dummies(X_reference, drop_first=True, dtype=int)
-feature_columns = X_reference.columns
 st.set_page_config(
     page_title="Customer Churn Prediction",
     page_icon="📊",
